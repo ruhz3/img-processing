@@ -22,8 +22,6 @@ for i in range(height):
     for j in range(width):
         output_img[i][j] = box_filter(input_img, i, j)
 
-print(input_img)
-print(output_img)
 cv2.imshow('input', input_img)
 cv2.imshow('output', output_img)
 cv2.waitKey()
